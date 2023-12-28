@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="images/favicon.png" />
+  <title>VinTravel</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/daterangepicker.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header header-padding-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="inner-wrap">
+            <div class="inner-left">
+              <div class="inner-icon-menu" id="buttonOpenMenu">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="inner-menu">
+                <ul>
+                  <li><a href="trang-ket-qua.html">ƯU ĐÃI</a></li>
+                  <li><a href="trang-ket-qua.html">KHÁCH SẠN & NGHỈ DƯỠNG</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="inner-center">
+              <div class="inner-logo">
+                <a href="/">
+                  <img src="images/core/logo.png" alt="VinTravel">
+                </a>
+              </div>
+            </div>
+            <div class="inner-right">
+              <div class="inner-menu">
+                <ul>
+                  <li><a href="trang-ket-qua.html">COMBO DU LỊCH</a></li>
+                  <li><a href="trang-ket-qua.html">VÉ MÁY BAY</a></li>
+                </ul>
+              </div>
+              <div class="inner-actions">
+                <a href="#">
+                  <i class="fa-solid fa-circle-user"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- MenuSider -->
+  <div class="menu-sider" id="menuSider">
+    <div class="inner-list">
+      <button class="inner-close" id="buttonCloseMenu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="inner-label">
+        Menu
+      </div>
+      <ul>
+        <li><a href="/">TRANG CHỦ</a></li>
+        <li><a href="trang-ket-qua.html">ƯU ĐÃI</a></li>
+        <li><a href="trang-ket-qua.html">KHÁCH SẠN & NGHỈ DƯỠNG</a></li>
+        <li><a href="trang-ket-qua.html">COMBO DU LỊCH</a></li>
+        <li><a href="trang-ket-qua.html">VÉ MÁY BAY</a></li>
+      </ul>
+    </div>
+    <div class="inner-overlay" id="menuOverlay"></div>
+  </div>
+  <!-- End MenuSider -->
+
+  <!-- Search Advanced -->
+  <div class="search-advanced search-advanced-header inner-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form action="">
+            <div class="inner-form">
+              <div class="inner-elements">
+                <div class="inner-box inner-location">
+                  <label for="diemDen">Điểm đến</label>
+                  <div class="inner-input">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Bạn muốn đi đâu" id="diemDen">
+                  </div>
+                </div>
+                <div class="inner-box inner-quantity">
+                  <label for="soLuongKhach">Số lượng khách</label>
+                  <div class="inner-input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="number" placeholder="0 Travelers" id="soLuongKhach" min="1">
+                  </div>
+                </div>
+                <div class="inner-box inner-date">
+                  <label for="ngay">Ngày</label>
+                  <div class="inner-input">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" class="form-control jsDateRange" placeholder="Chọn khoảng ngày" id="ngay">
+                  </div>
+                </div>
+              </div>
+              <div class="inner-button">
+                <button type="submit">
+                  <img src="images/core/icon-arrow-right.png" alt="">
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Search Advanced -->
+
+  <div class="product-detail">
+    <div class="container">
+      <div class="inner-head">
+        <div class="inner-left">
+          <div class="inner-title">
+            <h1>FLC Hạ Long Bay Golf Club</h1>
+            <div class="box-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+          <div class="inner-address">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Đảo Rều, Bãi Cháy</span>
+          </div>
+          <div class="inner-tags">
+            <a href="#">
+              Bải biển riêng
+            </a>
+            <a href="#">
+              Phòng rộng
+            </a>
+            <a href="#">
+              Khu vui chơi
+            </a>
+          </div>
+        </div>
+        <div class="inner-right">
+          <div class="inner-price">
+            <span>Giá chỉ từ</span>
+            <span>1,400,000 VND</span>
+          </div>
+          <a href="#" class="button button-main">
+            Đặt ngay
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3">
+          <div class="inner-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.964361829725!2d107.10965241151415!3d20.953946280596124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314a5743d857234b%3A0xf6120745cdb839f1!2sFLC%20Ha%20Long%20Bay!5e0!3m2!1svi!2s!4v1697911130720!5m2!1svi!2s"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="inner-content-highlight">
+            <div class="inner-title">
+              Tận hưởng dịch vụ đỉnh cao, đẳng cấp thế giới tại FLC Halong Bay Golf Club & Luxury Resort
+            </div>
+            <div class="inner-desc">
+              <p>Tọa lạc ở thành phố Hạ Long, FLC Halong Bay Golf Club & Luxury Resort có khu vườn, sân hiên, nhà hàng
+                và quầy bar. Khách sạn 5 sao này có WiFi miễn phí, CLB trẻ em và dịch vụ phòng. Chỗ nghỉ cấm hút
+                thuốc và nằm cách Bảo tàng Quảng Ninh 1,9 km.</p>
+              <p>Tất cả phòng nghỉ tại khách sạn đều được trang bị máy điều hòa, TV truyền hình cáp màn hình phẳng,
+                minibar, ấm đun nước, vòi sen, đồ vệ sinh cá nhân miễn phí và bàn làm việc. Các phòng được bố trí tủ để
+                quần áo và phòng tắm riêng với máy sấy tóc. Một số phòng còn có ban công. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-9 col-lg-9">
+          <div class="inner-main">
+            <div class="inner-images">
+              <div class="inner-tag">
+                Combo 2N1D + Ăn Sáng
+              </div>
+              <div class="swiper product-images-main productImagesMainJS">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-5.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-6.png" />
+                  </div>
+                </div>
+                <div class="swiper-button-next swiper-button-circle"></div>
+                <div class="swiper-button-prev swiper-button-circle"></div>
+              </div>
+              <div thumbsSlider="" class="swiper product-images-thumb productImagesThumbJS">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-1.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-2.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-3.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-4.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-5.png" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/products/pro-6.png" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="inner-info">
+              <div class="inner-title">
+                <span>Voucher 2N1D + Bữa sáng |</span>
+                <span>499,000 VND/người</span>
+              </div>
+
+              <div class="inner-wrap">
+                <div class="inner-content">
+                  <ul>
+                    <li>Áp dụng cho toàn bộ hệ thống của FLC: Quy Nhơn, Hạ Long, Sầm Sơn.</li>
+                    <li>2N1D nghỉ dưỡng tại các khách sạn & resort</li>
+                    <li>Ăn sáng theo tiêu chuẩn quốc tế</li>
+                    <li>Miễn phí sử dụng các tiện ích: bể bơi và phòng Gym</li>
+                  </ul>
+                </div>
+                <div class="inner-form">
+                  <div class="inner-label">
+                    Đặt ngay, chỉ mất 5 phút. Hoặc liên hệ hotline 0921836789
+                  </div>
+                  <form action="">
+                    <div class="product-detail-head__amount">
+                      <div class="product-detail-head__amount-label">
+                        <span>Người lớn</span>
+                        <span>x 2.346.000</span>
+                      </div>
+                      <div class="product-detail-head__amount-box">
+                        <button class="btn-sub" type="button">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1">
+                        <button class="btn-add" type="button">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-detail-head__amount">
+                      <div class="product-detail-head__amount-label">
+                        <span>Trẻ em</span>
+                        <span>x 2.346.000</span>
+                      </div>
+                      <div class="product-detail-head__amount-box">
+                        <button class="btn-sub" type="button">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1">
+                        <button class="btn-add" type="button">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-detail-head__amount">
+                      <div class="product-detail-head__amount-label">
+                        <span>Em bé</span>
+                        <span>x 2.346.000</span>
+                      </div>
+                      <div class="product-detail-head__amount-box">
+                        <button class="btn-sub" type="button">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                        <input type="number" value="1" min="1">
+                        <button class="btn-add" type="button">
+                          <i class="fas fa-plus"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="product-detail-head__price">
+                      <label>Tổng cộng:</label>
+                      <span>2.590.000 đ</span>
+                    </div>
+                    <button class="btn-buy-now" type="submit">
+                      YÊU CẦU ĐẶT
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="search-advanced type-2 mt-30 mb-30">
+              <div class="inner-title">
+                Bảng giá FLC Hạ Long Bay Golf Club
+              </div>
+              <form action="">
+                <div class="inner-form">
+                  <div class="inner-elements">
+                    <div class="inner-box inner-date">
+                      <label for="ngay">Ngày</label>
+                      <div class="inner-input">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <input type="text" class="form-control jsDateRange" placeholder="Chọn khoảng ngày" id="ngay">
+                      </div>
+                    </div>
+                    <div class="inner-box inner-quantity">
+                      <label>Số lượng khách</label>
+                      <div class="inner-input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="number" placeholder="0 Người Lớn" min="1">
+                      </div>
+                      <div class="inner-input">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="number" placeholder="0 Trẻ Em" min="1">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner-button">
+                    <button type="submit">
+                      <img src="images/core/icon-arrow-right.png" alt="">
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bảng chọn phòng -->
+    <div class="container mt-60">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12">
+          <div class="inner-table-services" table-services>
+            <div class="inner-table">
+              <div class="inner-thead">
+                <div class="inner-tr">
+                  <div class="inner-col">Loại phòng</div>
+                  <div class="inner-col">Các lựa chọn</div>
+                  <div class="inner-col">Giá ưu đãi</div>
+                  <div class="inner-col"></div>
+                </div>
+              </div>
+              <div class="inner-body">
+                <div class="inner-tr">
+                  <div class="inner-col">
+                    <div class="inner-title">
+                      Deluxe Golf View
+                    </div>
+                    <div class="inner-image">
+                      <img src="images/products/pro-1.png" alt="">
+                    </div>
+                    <div class="inner-btn-view-image">
+                      Xem ảnh phóng chi tiết
+                    </div>
+                    <div class="inner-list-util">
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-size.jpg" alt="">
+                        <span>42 - 48m<sup>2</sup></span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-people.jpg" alt="">
+                        <span>Tối đa <strong>2</strong> người lớn & <strong>2</strong> trẻ em</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-bed.jpg" alt="">
+                        <span>1 giường King</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-window.jpg" alt="">
+                        <span>Hướng Sân Golf</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-voi-hoa-sen.jpg" alt="">
+                        <span>Vòi Hoa Sen</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner-rows">
+                    <div class="inner-cols inner-cols-highlight">
+                      <div class="inner-col">
+                        <div class="inner-list-highlight">
+                          <div class="inner-label-highlight">
+                            Gồm ăn sáng
+                          </div>
+                          <div class="inner-item-highlight">
+                            Đã bao gồm thuế và phí dịch vụ
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không hoàn hủy và thay đổi
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <div class="inner-price">
+                          <span>998,000</span>
+                          <span>VND</span>
+                        </div>
+                        <div class="inner-text">
+                          Giá 1 đêm cho 2 người lớn
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <button class="button button-highlight">
+                          Đặt Phòng
+                        </button>
+                      </div>
+                    </div>
+                    <div class="inner-cols">
+                      <div class="inner-col">
+                        <div class="inner-list-highlight">
+                          <div class="inner-label-highlight">
+                            Gồm ăn sáng & Golf
+                          </div>
+                          <div class="inner-item-highlight">
+                            Đã bao gồm thuế và phí dịch vụ
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không hoàn hủy và thay đổi
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không áp dụng dịch vụ golf vào Thứ 7 - Chủ Nhật
+                          </div>
+                          <div class="inner-item-highlight">
+                            Dịch vụ golf dành cho 1 golfer gồm 1 vòng golf 18 hố, phí sân, caddy, buggy chung
+                          </div>
+                          <div class="inner-item-highlight">
+                            Ưu đãi 10% dịch vụ ẩm thực tại khách sạn (không bao gồm minibar & gọi món tại phòng)
+                          </div>
+                          <div class="inner-item-highlight">
+                            Ưu đãi 20% dịch vụ spa tại khách sạn (không áp dụng với các CTKM khác)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <div class="inner-price">
+                          <span>2,998,000</span>
+                          <span>VND</span>
+                        </div>
+                        <div class="inner-text">
+                          Giá 1 đêm cho 2 người lớn
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <button class="button button-highlight">
+                          Đặt Phòng
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inner-tr">
+                  <div class="inner-col">
+                    <div class="inner-title">
+                      Grand Suite Golf View
+                    </div>
+                    <div class="inner-image">
+                      <img src="images/products/pro-2.png" alt="">
+                    </div>
+                    <div class="inner-btn-view-image">
+                      Xem ảnh phóng chi tiết
+                    </div>
+                    <div class="inner-list-util">
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-size.jpg" alt="">
+                        <span>42 - 48m<sup>2</sup></span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-people.jpg" alt="">
+                        <span>Tối đa <strong>2</strong> người lớn & <strong>2</strong> trẻ em</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-bed.jpg" alt="">
+                        <span>1 giường King</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-window.jpg" alt="">
+                        <span>Hướng Sân Golf</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-voi-hoa-sen.jpg" alt="">
+                        <span>Vòi Hoa Sen</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner-rows">
+                    <div class="inner-cols">
+                      <div class="inner-col">
+                        <div class="inner-list-highlight">
+                          <div class="inner-label-highlight">
+                            Gồm ăn sáng
+                          </div>
+                          <div class="inner-item-highlight">
+                            Đã bao gồm thuế và phí dịch vụ
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không hoàn hủy và thay đổi
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <div class="inner-price">
+                          <span>1,998,000</span>
+                          <span>VND</span>
+                        </div>
+                        <div class="inner-text">
+                          Giá 1 đêm cho 2 người lớn
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <button class="button button-highlight">
+                          Đặt Phòng
+                        </button>
+                      </div>
+                    </div>
+                    <div class="inner-cols">
+                      <div class="inner-col">
+                        <div class="inner-list-highlight">
+                          <div class="inner-label-highlight">
+                            Gồm ăn sáng & Golf
+                          </div>
+                          <div class="inner-item-highlight">
+                            Đã bao gồm thuế và phí dịch vụ
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không hoàn hủy và thay đổi
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không áp dụng dịch vụ golf vào Thứ 7 - Chủ Nhật
+                          </div>
+                          <div class="inner-item-highlight">
+                            Dịch vụ golf dành cho 1 golfer gồm 1 vòng golf 18 hố, phí sân, caddy, buggy chung
+                          </div>
+                          <div class="inner-item-highlight">
+                            Ưu đãi 10% dịch vụ ẩm thực tại khách sạn (không bao gồm minibar & gọi món tại phòng)
+                          </div>
+                          <div class="inner-item-highlight">
+                            Ưu đãi 20% dịch vụ spa tại khách sạn (không áp dụng với các CTKM khác)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <div class="inner-price">
+                          <span>3,998,000</span>
+                          <span>VND</span>
+                        </div>
+                        <div class="inner-text">
+                          Giá 1 đêm cho 2 người lớn
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <button class="button button-highlight">
+                          Đặt Phòng
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inner-tr">
+                  <div class="inner-col">
+                    <div class="inner-title">
+                      Grand Suite Golf View
+                    </div>
+                    <div class="inner-image">
+                      <img src="images/products/pro-2.png" alt="">
+                    </div>
+                    <div class="inner-btn-view-image">
+                      Xem ảnh phóng chi tiết
+                    </div>
+                    <div class="inner-list-util">
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-size.jpg" alt="">
+                        <span>42 - 48m<sup>2</sup></span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-people.jpg" alt="">
+                        <span>Tối đa <strong>2</strong> người lớn & <strong>2</strong> trẻ em</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-bed.jpg" alt="">
+                        <span>1 giường King</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-window.jpg" alt="">
+                        <span>Hướng Sân Golf</span>
+                      </div>
+                      <div class="inner-item-util">
+                        <img src="images/core/icons/icon-voi-hoa-sen.jpg" alt="">
+                        <span>Vòi Hoa Sen</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="inner-rows">
+                    <div class="inner-cols">
+                      <div class="inner-col">
+                        <div class="inner-list-highlight">
+                          <div class="inner-label-highlight">
+                            Gồm ăn sáng
+                          </div>
+                          <div class="inner-item-highlight">
+                            Đã bao gồm thuế và phí dịch vụ
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không hoàn hủy và thay đổi
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <div class="inner-price">
+                          <span>1,998,000</span>
+                          <span>VND</span>
+                        </div>
+                        <div class="inner-text">
+                          Giá 1 đêm cho 2 người lớn
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <button class="button button-highlight">
+                          Đặt Phòng
+                        </button>
+                      </div>
+                    </div>
+                    <div class="inner-cols">
+                      <div class="inner-col">
+                        <div class="inner-list-highlight">
+                          <div class="inner-label-highlight">
+                            Gồm ăn sáng & Golf
+                          </div>
+                          <div class="inner-item-highlight">
+                            Đã bao gồm thuế và phí dịch vụ
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không hoàn hủy và thay đổi
+                          </div>
+                          <div class="inner-item-highlight">
+                            Không áp dụng dịch vụ golf vào Thứ 7 - Chủ Nhật
+                          </div>
+                          <div class="inner-item-highlight">
+                            Dịch vụ golf dành cho 1 golfer gồm 1 vòng golf 18 hố, phí sân, caddy, buggy chung
+                          </div>
+                          <div class="inner-item-highlight">
+                            Ưu đãi 10% dịch vụ ẩm thực tại khách sạn (không bao gồm minibar & gọi món tại phòng)
+                          </div>
+                          <div class="inner-item-highlight">
+                            Ưu đãi 20% dịch vụ spa tại khách sạn (không áp dụng với các CTKM khác)
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <div class="inner-price">
+                          <span>3,998,000</span>
+                          <span>VND</span>
+                        </div>
+                        <div class="inner-text">
+                          Giá 1 đêm cho 2 người lớn
+                        </div>
+                      </div>
+                      <div class="inner-col">
+                        <button class="button button-highlight">
+                          Đặt Phòng
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="inner-view-more">
+                  <button btn-view-more>Xem thêm <i class="fa-solid fa-angle-down"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hết Bảng chọn phòng -->
+
+    <!-- TIỆN ÍCH KHÁCH SẠN -->
+    <div class="container mt-60">
+      <div class="box-list-services">
+        <div class="inner-title">
+          TIỆN ÍCH KHÁCH SẠN
+        </div>
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Bãi đậu xe ô tô tại khách sạn
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Khu vui chơi trẻ em
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Quầy bar cạnh bể bơi
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Dịch vụ dọn phòng
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Business Center
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Hồ bơi ngoài trời
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Hồ bơi
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Phòng gia đình
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Trạm sạc xe điện
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Khu vui chơi ngoài trời
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Quầy bar oooftop
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Dịch vụ chăm sóc trẻ em
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Business Center
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Hồ bơi ngoài trời
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Jacuzzi
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Phòng họp
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Kid’s Club
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Dịch vụ giặt ủi
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Quầy bar oooftop
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Trà/Cà phê miễn phí
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Sân chơi golf
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Hồ bơi ngoài trời
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Phòng xông hơi
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-12">
+            <div class="inner-item">
+              Bàn Bi-a
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hết TIỆN ÍCH KHÁCH SẠN -->
+
+    <!-- CHÍNH SÁCH KHÁCH SẠN -->
+    <div class="container mt-60">
+      <div class="box-policy">
+        <div class="inner-title">
+          CHÍNH SÁCH KHÁCH SẠN
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td>Giờ nhận phòng</td>
+              <td>14:00</td>
+            </tr>
+            <tr>
+              <td>Giờ trả phòng</td>
+              <td>12:00</td>
+            </tr>
+            <tr>
+              <td>Chính sách trẻ em</td>
+              <td>
+                <p>- Miễn phí 1 trẻ dưới 5 tuổi ngủ chung, trẻ thứ 2 phụ thu 550,000 VNĐ/đêm</p>
+                <p>- Trẻ từ 5 - 11 tuổi phụ thu ngủ chung 2,585,000 VNĐ/trẻ/đêm</p>
+                <p>- Trẻ từ 5 - 11 tuổi phụ thu giường phụ 3.218,000 VNĐ/trẻ/đêm</p>
+                <p>- Từ 12 tuổi trở lên tính như người lớn phụ thu giường phụ 50% cabin</p>
+                <p>*** Giai đoạn Lễ Tết có phụ thu thêm</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Di chuyển</td>
+              <td>
+                <p>Tại Hạ Long có nhiều sân bay dễ dàng di chuyển đến:</p>
+                <p>- Sân Bay Nội Bài: 183km khoảng 2 tiếng 30 di chuyển</p>
+                <p>- Sân Bay Cát Bi Hải Phòng: 56km khoảng 1 tiếng di chuyển</p>
+                <p>- Sân Bay Vân Đồn: 56km khoảng 1 tiếng di chuyển (hiện tại đang có tuyến xe bus miễn phí di chuyển vào trung tâm thành phố Hạ Long)</p>
+                <p>Ngoài ra khách hàng có thể di chuyển bằng xe khách chỉ mất khoảng hơn 2 tiếng di chuyển từ Hà Nội</p>
+              </td>
+            </tr>
+            <tr>
+              <td>Hướng dẫn nhận phòng</td>
+              <td>
+                <p>Quý khách vui lòng xuất trình giấy tờ tùy thân trùng tên với người đại diện trong Phiếu xác nhận đặt phòng của Vintravel JSC để thủ tục nhận phòng được nhanh chóng.</p>
+                <p>Khách sạn sẽ yêu cầu khoản tiền đặt cọc là 1.000.000 VNĐ/phòng/đêm tại thời điểm nhận phòng, khuyến khích sử dụng tiền mặt hoặc thẻ tín dụng (Credit Card).</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <!-- Hết CHÍNH SÁCH KHÁCH SẠN -->
+
+    <!-- TRẢI NGHIỆM KHÁCH HÀNG -->
+    <div class="container mt-60">
+      <div class="box-testimonials">
+        <div class="inner-title">
+          TRẢI NGHIỆM KHÁCH HÀNG
+          <br>
+          VỀ FLC HA LONG BAY GOLF CLUB
+        </div>
+        <div class="swiper testimonialsJS">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="inner-box">
+                <div class="inner-desc">
+                  Nhân viên thân thiện, bể bơi sạch đẹp, ăn sáng phong phú và ngon miệng. Phòng ốc, nội thất sạch sẽ, hiện đại. Sẽ quay lại
+                </div>
+                <div class="inner-footer">
+                  <div class="inner-avatar">
+                    <img src="images/products/pro-1.png" alt="">
+                  </div>
+                  <div class="inner-text">
+                    <div class="inner-name">
+                      My Phạm
+                    </div>
+                    <div class="inner-position">
+                      Việt Nam
+                    </div>
+                  </div>
+                  <div class="inner-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-box">
+                <div class="inner-desc">
+                  Nhân viên thân thiện, bể bơi sạch đẹp, ăn sáng phong phú và ngon miệng. Phòng ốc, nội thất sạch sẽ, hiện đại. Sẽ quay lại
+                </div>
+                <div class="inner-footer">
+                  <div class="inner-avatar">
+                    <img src="images/products/pro-1.png" alt="">
+                  </div>
+                  <div class="inner-text">
+                    <div class="inner-name">
+                      My Phạm
+                    </div>
+                    <div class="inner-position">
+                      Việt Nam
+                    </div>
+                  </div>
+                  <div class="inner-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="inner-box">
+                <div class="inner-desc">
+                  Nhân viên thân thiện, bể bơi sạch đẹp, ăn sáng phong phú và ngon miệng. Phòng ốc, nội thất sạch sẽ, hiện đại. Sẽ quay lại
+                </div>
+                <div class="inner-footer">
+                  <div class="inner-avatar">
+                    <img src="images/products/pro-1.png" alt="">
+                  </div>
+                  <div class="inner-text">
+                    <div class="inner-name">
+                      My Phạm
+                    </div>
+                    <div class="inner-position">
+                      Việt Nam
+                    </div>
+                  </div>
+                  <div class="inner-icon">
+                    <i class="fa-solid fa-quote-right"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-button-circle"></div>
+          <div class="swiper-button-prev swiper-button-circle"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Hết TRẢI NGHIỆM KHÁCH HÀNG -->
+
+  </div>
+
+  <!-- Khách sạn tương tự -->
+  <div class="products-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                Khách sạn
+                <br>
+                Tương tự
+              </div>
+              <div class="inner-line"></div>
+            </div>
+            <div class="inner-right">
+              <a href="trang-ket-qua.html" class="button button-main">
+                Xem tất cả
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper productsMainJS">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-1.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Voucher FLC Toàn Hệ thống
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-2.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Nam Hội An
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-3.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Sheraton Long Beach Phú Quốc
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-4.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-5.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Premier Village Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-6.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Du Thuyền Ambassador
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-circle"></div>
+      <div class="swiper-button-prev swiper-button-circle"></div>
+    </div>
+  </div>
+  <!-- Hết Khách sạn tương tự -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="inner-main">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-box">
+            <div class="inner-title">
+              CÔNG TY CỔ PHẦN VINTRAVEL
+            </div>
+            <div class="inner-list">
+              <div class="inner-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span><b>VP Hà Nội:</b> Tầng 2, toà nhà Văn Phòng Số 122A phố Trịnh Đình Cửu, Phường Định Công, Quận
+                  Hoàng Mai, TP. Hà Nội</span>
+              </div>
+              <div class="inner-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span><b>VP Hạ Long:</b> Biệt thự liền kề số 01 đường San Hô II, Green Bay Garden Hạ Long, Quảng
+                  Ninh</span>
+              </div>
+              <div class="inner-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>092 169 7777 | 092 183 6789</span>
+              </div>
+              <div class="inner-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@vintrveljsc.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-title">
+              Dịch vụ
+            </div>
+            <div class="inner-list">
+              <ul>
+                <li><a href="trang-ket-qua.html">Khách sạn & Nghỉ dưỡng</a></li>
+                <li><a href="trang-ket-qua.html">Tour</a></li>
+                <li><a href="trang-ket-qua.html">Combo Du lịch</a></li>
+                <li><a href="trang-ket-qua.html">Vé Vui Chơi</a></li>
+                <li><a href="trang-ket-qua.html">Vé Máy Bay</a></li>
+                <li><a href="trang-ket-qua.html">Visa</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-title">
+              Kết nối với Vintravel
+            </div>
+            <div class="inner-socials">
+              <ul>
+                <li><a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="inner-images">
+              <a href="#" target="_blank">
+                <img src="images/core/dmca@2x.png" alt="">
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/core/da-thong-bao-bo-cong-thuong@2x.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-copyright">
+      COPYRIGHT © 2023 VINTRAVELJSC. ALL RIGHTS RESERVED
+    </div>
+  </div>
+  <!-- Hết Footer -->
+
+  <!-- Bootstrap Js -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Javascript -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/double-range.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
