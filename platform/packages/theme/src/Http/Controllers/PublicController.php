@@ -36,15 +36,13 @@ class PublicController extends Controller
             return Theme::scope($data['view'], $data['data'], $data['default_view'])->render();
         }
 
-        $user = auth('member')->user();
-
         SeoHelper::setTitle(theme_option('site_title'));
 
         Theme::breadcrumb()->add(__('Home'), route('public.index'));
 
         event(RenderingHomePageEvent::class);
 
-        return Theme::scope('index', compact('user'))->render();
+        return Theme::scope('index' )->render();
     }
 
     public function getView(string|null $key = null, string $prefix = '')
