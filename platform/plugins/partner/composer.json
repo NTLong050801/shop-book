@@ -1,0 +1,20 @@
+{
+  "name": "botble/partner-category",
+  "description": "PartnerCategory package",
+  "type": "package",
+  "autoload": {
+    "psr-4": {
+      "Botble\\PartnerCategory\\": "src"
+    }
+  },
+  "require": {
+
+  },
+  "extra":{
+    "laravel":{
+      "providers":[
+        "Botble\\PartnerCategory\\Providers\\PartnerCategoryServiceProvider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="images/favicon.png" />
+  <title>VinTravel</title>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/daterangepicker.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header header-absolute header-white header-fixed">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="inner-wrap">
+            <div class="inner-left">
+              <div class="inner-icon-menu" id="buttonOpenMenu">
+                <i class="fa-solid fa-bars"></i>
+              </div>
+              <div class="inner-menu">
+                <ul>
+                  <li><a href="trang-ket-qua.html">ƯU ĐÃI</a></li>
+                  <li><a href="trang-ket-qua.html">KHÁCH SẠN & NGHỈ DƯỠNG</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="inner-center">
+              <div class="inner-logo">
+                <a href="/">
+                  <img src="images/core/logo.png" alt="VinTravel">
+                </a>
+              </div>
+            </div>
+            <div class="inner-right">
+              <div class="inner-menu">
+                <ul>
+                  <li><a href="trang-ket-qua.html">COMBO DU LỊCH</a></li>
+                  <li><a href="trang-ket-qua.html">VÉ MÁY BAY</a></li>
+                </ul>
+              </div>
+              <div class="inner-actions">
+                <a href="#">
+                  <i class="fa-solid fa-circle-user"></i>
+                </a>
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- MenuSider -->
+  <div class="menu-sider" id="menuSider">
+    <div class="inner-list">
+      <button class="inner-close" id="buttonCloseMenu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="inner-label">
+        Menu
+      </div>
+      <ul>
+        <li><a href="/">TRANG CHỦ</a></li>
+        <li><a href="trang-ket-qua.html">ƯU ĐÃI</a></li>
+        <li><a href="trang-ket-qua.html">KHÁCH SẠN & NGHỈ DƯỠNG</a></li>
+        <li><a href="trang-ket-qua.html">COMBO DU LỊCH</a></li>
+        <li><a href="trang-ket-qua.html">VÉ MÁY BAY</a></li>
+      </ul>
+    </div>
+    <div class="inner-overlay" id="menuOverlay"></div>
+  </div>
+  <!-- End MenuSider -->
+
+  <!-- Slider Main -->
+  <div class="swiper slider-main sliderMainJS">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="inner-item">
+          <img src="images/banner/banner-2.jpg" alt="">
+          <div class="inner-box">
+            <div class="container">
+              <div class="inner-content">
+                <div class="inner-title">
+                  Trải Nghiệm Kỳ Nghỉ Xứng Tầm
+                </div>
+                <div class="inner-desc">
+                  Khách Sạn & Nghỉ Dưỡng | Tour | Combo Du LỊCh
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner-item">
+          <img src="images/banner/banner-1.jpg" alt="">
+          <div class="inner-box">
+            <div class="container">
+              <div class="inner-content">
+                <div class="inner-title">
+                  Trải Nghiệm Kỳ Nghỉ Xứng Tầm
+                </div>
+                <div class="inner-desc">
+                  Khách Sạn & Nghỉ Dưỡng | Tour | Combo Du LỊCh
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-pagination-vertical">
+      <div class="inner-line"></div>
+      <div class="swiper-pagination swiper-pagination-white"></div>
+    </div>
+  </div>
+  <!-- End Slider Main -->
+
+  <!-- Search Advanced -->
+  <div class="search-advanced inner-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <form action="">
+            <div class="inner-form">
+              <div class="inner-elements">
+                <div class="inner-box inner-location">
+                  <label for="diemDen">Điểm đến</label>
+                  <div class="inner-input">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Bạn muốn đi đâu" id="diemDen">
+                  </div>
+                </div>
+                <div class="inner-box inner-quantity">
+                  <label for="soLuongKhach">Số lượng khách</label>
+                  <div class="inner-input">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="number" placeholder="0 Travelers" id="soLuongKhach" min="1">
+                  </div>
+                </div>
+                <div class="inner-box inner-date">
+                  <label for="ngay">Ngày</label>
+                  <div class="inner-input">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" class="form-control jsDateRange" placeholder="Chọn khoảng ngày" id="ngay">
+                  </div>
+                </div>
+              </div>
+              <div class="inner-button">
+                <button type="submit">
+                  <img src="images/core/icon-arrow-right.png" alt="">
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Search Advanced -->
+
+  <!-- Ưu đãi giá shock -->
+  <div class="products-main products-highlight">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box-head inner-white">
+            <div class="inner-left">
+              <div class="inner-title">
+                Ưu đãi
+                <br>
+                Giá shock
+              </div>
+              <div class="inner-line"></div>
+            </div>
+            <div class="inner-right">
+              <div class="box-countdown inner-white">
+                <div class="inner-label">Kết thúc sau</div>
+                <div class="inner-time">
+                  <span class="inner-item">
+                    <span id="hours">0</span>
+                    <span>Giờ</span>
+                  </span>
+                  <span class="inner-dot">:</span>
+                  <span class="inner-item">
+                    <span id="minutes">0</span>
+                    <span>Phút</span>
+                  </span>
+                  <span class="inner-dot">:</span>
+                  <span class="inner-item">
+                    <span id="seconds">0</span>
+                    <span>Giây</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper productsMainJS">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-1.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Voucher FLC Toàn Hệ thống
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-main">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-2.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Nam Hội An
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-main">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-3.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Sheraton Long Beach Phú Quốc
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-main">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-4.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-main">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-5.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Premier Village Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-main">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-6.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Du Thuyền Ambassador
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-main">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-circle swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-circle swiper-button-white"></div>
+    </div>
+
+    <div class="inner-view-more">
+      <a href="trang-ket-qua.html" class="button button-main">
+        Xem tất cả
+      </a>
+    </div>
+  </div>
+  <!-- Hết Ưu đãi giá shock -->
+
+  <!-- Khách sạn & Nghỉ dưỡng -->
+  <div class="products-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                Khách sạn
+                <br>
+                & Nghỉ dưỡng
+              </div>
+              <div class="inner-line"></div>
+            </div>
+            <div class="inner-right">
+              <a href="trang-ket-qua.html" class="button button-main">
+                Xem tất cả
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper productsMainJS">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-1.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Voucher FLC Toàn Hệ thống
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-2.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Nam Hội An
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-3.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Sheraton Long Beach Phú Quốc
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-4.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-5.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Premier Village Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-6.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Du Thuyền Ambassador
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-circle"></div>
+      <div class="swiper-button-prev swiper-button-circle"></div>
+    </div>
+  </div>
+  <!-- Hết Khách sạn & Nghỉ dưỡng -->
+
+  <!-- Vé vui chơi & Giải trí -->
+  <div class="products-main bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                Vé vui chơi
+                <br>
+                & Giải trí
+              </div>
+              <div class="inner-line"></div>
+            </div>
+            <div class="inner-right">
+              <a href="trang-ket-qua.html" class="button button-main">
+                Xem tất cả
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper productsMainJS">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-1.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Voucher FLC Toàn Hệ thống
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-2.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Nam Hội An
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-3.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Sheraton Long Beach Phú Quốc
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-4.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Vinpearl Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-5.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Premier Village Hạ Long
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="product-item">
+            <div class="inner-discount">
+              <span>50%</span>
+              <span>OFF</span>
+            </div>
+            <div class="inner-image">
+              <img src="images/products/pro-6.png" alt="">
+            </div>
+            <div class="inner-content">
+              <div class="inner-price">
+                <div class="inner-price-old">3,600,000 VNĐ</div>
+                <div class="inner-price-new">1,599,000 VNĐ</div>
+              </div>
+              <div class="inner-title">
+                <a href="trang-dat-phong.html">
+                  Du Thuyền Ambassador
+                </a>
+              </div>
+              <div class="inner-text">
+                500+ người đẫ đặt
+              </div>
+              <div class="inner-desc">
+                • 2N1D nghỉ dưỡng tại resort
+                <br>
+                • Ăn sáng buffet theo tiêu chuẩn
+                <br>
+                • Vé vui chơi không giới hạn
+              </div>
+              <a href="trang-dat-phong.html" class="button-round button-round-highlight">
+                Xem chi tiết
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next swiper-button-circle"></div>
+      <div class="swiper-button-prev swiper-button-circle"></div>
+    </div>
+  </div>
+  <!-- Vé vui chơi & Giải trí -->
+
+  <!-- Nhận ưu đãi -->
+  <div class="receive-email">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-6 col-lg-6 mb-3">
+          <div class="inner-content">
+            <div class="inner-title">
+              Nhận ưu đãi
+            </div>
+            <div class="inner-desc">
+              Đăng ký ngay hôm nay để khong bỏ lỡ các ưu đãi 
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-lg-6">
+          <form action="" class="inner-form">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="Nhập Email của bạn">
+            <button type="submit">Đăng ký</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hết Nhận ưu đãi -->
+
+  <!-- Dịch vụ du lịch -->
+  <div class="box-services">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                Dịch vụ du lịch
+              </div>
+              <div class="inner-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-item">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-image">
+            <img src="images/banner/banner-4.png" alt="">
+          </div>
+          <div class="inner-content">
+            <div class="inner-title">
+              Vé Máy Bay
+            </div>
+            <div class="inner-desc">
+              Đăt vé máy bay giá rẻ nhanh chóng với nhiều ưu đãi hấp dẫn cho chuyến đ sắp tới của bạn.
+            </div>
+            <a href="trang-ket-qua.html" class="button button-highlight">
+              Xem thêm
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-item">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-content">
+            <div class="inner-title">
+              Visa
+            </div>
+            <div class="inner-desc">
+              Dịch vụ làm visa quốc tế nhanh chóng, uy tín và giá rẻ
+            </div>
+            <a href="trang-ket-qua.html" class="button button-highlight">
+              Xem thêm
+            </a>
+          </div>
+          <div class="inner-image">
+            <img src="images/banner/banner-5.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hết Dịch vụ du lịch -->
+
+  <!-- Điểm đến yêu thích -->
+  <div class="gallery-highlight bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                Điểm đến
+                <br>
+                yêu thích
+              </div>
+              <div class="inner-line"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="inner-wrap">
+      <div class="swiper galleryHighlightJS">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/sapa.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Sapa
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/phu-quoc.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Phú Quốc
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/nha-trang.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Hạ Long
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/ha-long.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Nha Trang
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/da-nang.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Đà Nẵng
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/phu-quoc.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Phú Quốc
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/ha-long.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Hạ Long
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="inner-item">
+              <a href="trang-ket-qua.html">
+                <img src="images/banner/nha-trang.jpg" alt="">
+                <div class="inner-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Nha Trang
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next swiper-button-circle"></div>
+        <div class="swiper-button-prev swiper-button-circle"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Hết Điểm đến yêu thích -->
+
+  <!-- VinTravel JSC -->
+  <div class="box-highlight">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                VinTravel JSC
+              </div>
+              <div class="inner-line"></div>
+            </div>
+            <div class="inner-desc">
+              Vintravel JSC tự hào là đơn vị lữ hành chuyên cung cấp dịch vụ du lịch và nghỉ dưỡng của các khách sạn và resort 4 - 5* tại Việt Nam.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="row">
+        <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+          <div class="inner-box">
+            <img src="images/banner/doi-tac@2x.png" alt="">
+            <div class="inner-title">
+              ĐỐI TÁC CHIẾN LƯỢC
+            </div>
+            <div class="inner-desc">
+              Đối tác chiến lược của các khách sạn, resort 5* tại Việt Nam và trên thế giới
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+          <div class="inner-box">
+            <img src="images/banner/gia-tot@2x.png" alt="">
+            <div class="inner-title">
+              GIÁ TỐT NHẤT THỊ TRƯỜNG
+            </div>
+            <div class="inner-desc">
+              Cam kết giá tốt nhất thị trường & Sẵn quỹ phòng cuối tuần, ngày lễ
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 mb-3">
+          <div class="inner-box">
+            <img src="images/banner/ho-tro@2x.png" alt="">
+            <div class="inner-title">
+              HỖ TRỢ KHÁCH HÀNG 24/7
+            </div>
+            <div class="inner-desc">
+              Đội ngũ nhân viên của VIntravel luôn sẵn sàng giúp đỡ khách hàng trong từng bước của quá trình đặt dich vụ.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hết VinTravel JSC -->
+
+  <!-- Đối tác khách sạn -->
+  <div class="box-partners">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-5 col-lg-5 col-md-5">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                Đối tác
+                <br>
+                khách sạn
+              </div>
+              <div class="inner-line"></div>
+            </div>
+            <div class="inner-desc">
+              Vintravel hợp tác với các chuỗi khách sạn trên toàn thế giới để bảo đảm mang lại kỳ nghỉ tuyệt vời nhất tại mọi điểm đến.
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-7 col-lg-7 col-md-7">
+          <div class="swiper partnersJS">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/IHG_Hotels.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/MAR.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/melia.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/flc.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/the-ascott-limited.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/vinpearl.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/the-ascott-limited.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/vinpearl.jpg" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button-circle"></div>
+            <div class="swiper-button-prev swiper-button-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hết Đối tác khách sạn -->
+
+  <!-- Đối tác hàng không -->
+  <div class="box-partners bg-light">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-xl-5 col-md-5">
+          <div class="box-head">
+            <div class="inner-left">
+              <div class="inner-title">
+                Đối tác
+                <br>
+                hàng không
+              </div>
+              <div class="inner-line"></div>
+            </div>
+            <div class="inner-desc">
+              Những đối tác hàng không toàn cầu sẽ chắp cánh đưa bạn đến mọi địa điểm trên thế giới.
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-7 col-md-7">
+          <div class="swiper partnersJS">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/vn-air-logo.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/sg-airlines.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/Logo-Bamboo-Airways-V.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/Vietjet.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/Pacific-airlines.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/vietravel.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/Pacific-airlines.png" alt="">
+                  </a>
+                </div>
+                <div class="inner-item">
+                  <a href="#">
+                    <img src="images/banner/vietravel.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next swiper-button-circle"></div>
+            <div class="swiper-button-prev swiper-button-circle"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hết Đối tác hàng không -->
+
+  <!-- Footer -->
+  <div class="footer">
+    <div class="inner-main">
+      <div class="container">
+        <div class="inner-wrap">
+          <div class="inner-box">
+            <div class="inner-title">
+              CÔNG TY CỔ PHẦN VINTRAVEL
+            </div>
+            <div class="inner-list">
+              <div class="inner-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span><b>VP Hà Nội:</b> Tầng 2, toà nhà Văn Phòng Số 122A phố Trịnh Đình Cửu, Phường Định Công, Quận Hoàng Mai, TP. Hà Nội</span>
+              </div>
+              <div class="inner-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <span><b>VP Hạ Long:</b> Biệt thự liền kề số 01 đường San Hô II, Green Bay Garden Hạ Long, Quảng Ninh</span>
+              </div>
+              <div class="inner-item">
+                <i class="fa-solid fa-phone"></i>
+                <span>092 169 7777 | 092 183 6789</span>
+              </div>
+              <div class="inner-item">
+                <i class="fa-solid fa-envelope"></i>
+                <span>info@vintrveljsc.com</span>
+              </div>
+            </div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-title">
+              Dịch vụ
+            </div>
+            <div class="inner-list">
+              <ul>
+                <li><a href="trang-ket-qua.html">Khách sạn & Nghỉ dưỡng</a></li>
+                <li><a href="trang-ket-qua.html">Tour</a></li>
+                <li><a href="trang-ket-qua.html">Combo Du lịch</a></li>
+                <li><a href="trang-ket-qua.html">Vé Vui Chơi</a></li>
+                <li><a href="trang-ket-qua.html">Vé Máy Bay</a></li>
+                <li><a href="trang-ket-qua.html">Visa</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="inner-box">
+            <div class="inner-title">
+              Kết nối với Vintravel
+            </div>
+            <div class="inner-socials">
+              <ul>
+                <li><a href="#" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-square-facebook"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              </ul>
+            </div>
+            <div class="inner-images">
+              <a href="#" target="_blank">
+                <img src="images/core/dmca@2x.png" alt="">
+              </a>
+              <a href="#" target="_blank">
+                <img src="images/core/da-thong-bao-bo-cong-thuong@2x.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="inner-copyright">
+      COPYRIGHT © 2023 VINTRAVELJSC. ALL RIGHTS RESERVED
+    </div>
+  </div>
+  <!-- Hết Footer -->
+
+  <!-- Bootstrap Js -->
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+  <!-- Javascript -->
+  <script src="js/swiper-bundle.min.js"></script>
+  <script src="js/moment.min.js"></script>
+  <script src="js/daterangepicker.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
